@@ -1,0 +1,139 @@
+.card-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #dbc8c8; /* light gray background */
+    border: 1px solid #ccc; /* light gray border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(48, 43, 43, 0.1);
+    font-family: 'Raleway', sans-serif; /* added font family */
+}
+
+.nav {
+    background-color: #eb877e; /* blue background */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* added shadow */
+    border-radius: 10px; /* added curved corners */
+}
+
+.nav-link {
+    color: #fff; /* white text */
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.nav-link:hover {
+    color: #722119; /* light gray text on hover */
+}
+
+.main {
+    padding: 20px;
+}
+
+.main > * {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7; /* light gray background */
+    border: 1px solid #ccc; /* light gray border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Raleway', sans-serif; /* added font family */
+}
+
+.card {
+    background-color: #fff; /* white background */
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #eb877e; /* blue text */
+    font-family: 'Raleway', sans-serif; /* added font family */
+}
+
+.list-group {
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item a {
+    color: #eb877e; /* blue text */
+    text-decoration: none;
+}
+
+.list-group-item a:hover {
+    color: #722119; /* darker blue text on hover */
+}
+
+.list-group-item.edit {
+    margin-left: 10px;
+    color: #eb877e; /* blue text */
+    text-decoration: none;
+}
+
+.list-group-item.edit:hover {
+    color: #722119; /* darker blue text on hover */
+}
+
+.list-name {
+    margin-right: 20px; /* increase the margin to create space between list name and edit option */
+}
+
+.spacer {
+    display: inline-block;
+    width: 90px; /* add a spacer element to take up space */
+}
+
+.create-list-btn-container {
+    margin-top: 20px;
+    padding: 10px; /* reduced padding */
+    background-color: #eb877e; /* blue background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif; /* added font family */
+}
+
+.create-list-btn {
+    font-size: 14px; /* reduced font size */
+    color: #ffffff; /* white text */
+    background-color: #eb877e; /* blue background */
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px; /* reduced padding */
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Raleway', sans-serif; /* added font family */
+}
+
+.button-text {
+    display: block;
+    text-align: center;
+}
+
+.create-list-btn:hover {
+    background-color: #722119; /* darker blue background on hover */
+}

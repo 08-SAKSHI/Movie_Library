@@ -1,0 +1,33 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+<div class="card-container">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Search for a Movie</h1>
+            <form method="get">
+                <input type="text" name="query" placeholder="Search for a movie...">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+
+            {% if movie_data %}
+                <h2 class="card-title">Movie Found</h2>
+                <p>IMDB ID: {{ movie_data.imdb_id }}</p>
+                <p>Title: {{ movie_data.title }}</p>
+                <p>Year: {{ movie_data.year }}</p>
+                <p>Plot: {{ movie_data.plot }}</p>
+                <p>Poster: <img src="{{ movie_data.poster }}" alt="Movie Poster"></p>
+                <form method="post" action="{% url 'film' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="imdb_id" value="{{ movie_data.imdb_id }}">
+                    <button type="submit" class="btn btn-primary">Add this movie</button>
+                </form>
+            {% else %}
+                <p class="text-muted">No movie found. Try searching again!</p>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

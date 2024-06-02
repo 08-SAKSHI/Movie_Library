@@ -1,0 +1,22 @@
+{% extends "app/base.html" %}
+{% block content %}
+    
+<div class="container">
+    <h1>Add Movie to {{ list_obj.name }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        <select name="movie_id">
+            {% for movie in movies %}
+                <option value="{{ movie.id }}">{{ movie.title }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Add Movie">
+    </form>
+
+    <div class="search-movie-btn-container text-center">
+        <a class="btn btn-primary btn-lg search-movie-btn" href="{% url 'home' %}">
+            <span class="button-text">Search for a new movie?</span>
+        </a>
+    </div>
+</div>
+{% endblock %}

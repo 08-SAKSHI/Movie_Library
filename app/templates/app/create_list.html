@@ -1,0 +1,17 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+<div class="card-container">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Create a new list</h1>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Create List" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

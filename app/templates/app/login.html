@@ -1,0 +1,18 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+<div class="card-container">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Welcome Back!</h1>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="text-muted">Don't have an account? <a href="{% url 'signup' %}" class="link">Register here</a>.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

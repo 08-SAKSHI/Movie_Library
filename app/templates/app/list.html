@@ -1,0 +1,40 @@
+{% extends "app/base.html" %}
+{% block content %}
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">My Lists</h1>
+            {% if lists %}
+                <ul class="list-group">
+                    {% for list in lists %}
+                        <li class="list-group-item">
+                            <a href="{% url 'movie_list' list.id %}" class="list-name">{{ list.name }}</a>
+                            <span class="spacer"></span>
+                            <a href="{% url 'add_movie_to_list' list.id %}" class="edit">Edit</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            
+            {% endif %}
+
+            {% if list_obj %}
+                <h1 class="card-title">{{ list_obj.name }}</h1>
+                <ul class="list-group">
+                    {% for movie in movies %}
+                        <li class="list-group-item">{{ movie.movie.title }} ({{ movie.movie.year }})</li>
+                    {% empty %}
+                        <li class="list-group-item">This list is empty.</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="create-list-btn-container text-center">
+        <a class="btn btn-primary btn-lg create-list-btn" href="{% url 'create_list' %}">
+            <span class="button-text">Create New List</span>
+        </a>
+    </div>
+</div>
+
+{% endblock %}
