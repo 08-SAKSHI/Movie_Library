@@ -15,9 +15,9 @@ A movie library web application built with Django and HTML.
 2. Install the dependencies: `pip install -r requirements.txt`
 3. Run the migrations: `python manage.py migrate`
 4. Start the development server: `python manage.py runserver`
-5. Open the application in your web browser: `http://localhost:8000`
+5. Open the application in your web browser: `https://movie-dump.netlify.app/`
 
 ## Hosting
 
-The application is hosted on Heroku: `https://movie-library.herokuapp.com`
+The application is hosted on Heroku: 'https://movie-dump.netlify.app/'
 
