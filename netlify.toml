@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "template/app"
+
+[[redirects]]
+  from = "/*"
+  to = "/template/app/:splat"
+  status = 200
