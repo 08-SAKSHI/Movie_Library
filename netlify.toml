@@ -1,8 +1,8 @@
 [build]
-  command = "npm run build"
-  publish = "template/app"
+  command = "python manage.py collectstatic --no-input && python manage.py build"
+  publish = "static"
 
 [[redirects]]
   from = "/*"
-  to = "/template/app/:splat"
+  to = "/static/:splat"
   status = 200
