@@ -29,8 +29,6 @@ DEBUG = True
 # ALLOWED_HOSTS = ['movie-dump.netlify.app',
 #                  '127.0.0.1']
 
-ALLOWED_HOSTS = ['.vercel.app']
-
 # Application definition
 
 INSTALLED_APPS = [
