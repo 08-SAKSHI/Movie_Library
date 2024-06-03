@@ -24,9 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-qd))l8s59nwh4cv44s0^ee5$0q&gc7_qx%0d=!ny0dou7k$=i!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['movie-dump.netlify.app']
+ALLOWED_HOSTS = ['movie-dump.netlify.app',
+                 '127.0.0.1']
 
 
 # Application definition
