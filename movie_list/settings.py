@@ -26,9 +26,10 @@ SECRET_KEY = 'django-insecure-qd))l8s59nwh4cv44s0^ee5$0q&gc7_qx%0d=!ny0dou7k$=i!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['movie-dump.netlify.app',
-                 '127.0.0.1']
+# ALLOWED_HOSTS = ['movie-dump.netlify.app',
+#                  '127.0.0.1']
 
+ALLOWED_HOSTS = ['.vercel.app']
 
 # Application definition
 
